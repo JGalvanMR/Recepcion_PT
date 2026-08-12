@@ -377,14 +377,14 @@ namespace Recepcion_PT
                 //hilo.Start();
                 //Thread.Sleep(1000);
                 MessageBox.Show(ex.ToString(), "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Utilerias.Class1.SendMail("sistemas@mrlucky.com.mx", "sistemas", "sisgab", ex.ToString().Trim());
+                Utilerias.Class1.SendMail("sistemas@mrlucky.com.mx", "sistemas", "Sistem@s2026$", ex.ToString().Trim());
                 return;
             }
             catch (Exception ex1)
             {
                 thisConnection.Close();
                 MessageBox.Show(ex1.ToString(), "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Utilerias.Class1.SendMail("sistemas@mrlucky.com.mx", "sistemas", "sisgab", ex1.ToString().Trim());
+                Utilerias.Class1.SendMail("sistemas@mrlucky.com.mx", "sistemas", "Sistem@s2026$", ex1.ToString().Trim());
                 return;
             }
         }
@@ -1687,7 +1687,7 @@ namespace Recepcion_PT
                     System.Diagnostics.StackTrace trace = new System.Diagnostics.StackTrace(ex, true);
                     //Console.WriteLine("Line: " + trace.GetFrame(0).GetFileLineNumber());
                     MessageBox.Show("Recibo: " + txtrecibo.Text + " " + ex.ToString() + "  " + System.Environment.MachineName + " " + "Line: " + trace.GetFrame(0).GetFileLineNumber(), "AVISO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Utilerias.Class1.SendMail("sistemas@mrlucky.com.mx", "sistemas", "sisgab", "Recibo: " + txtrecibo.Text + " " + ex.ToString() + "  " + System.Environment.MachineName + " " + "Line: " + trace.GetFrame(0).GetFileLineNumber());
+                    Utilerias.Class1.SendMail("sistemas@mrlucky.com.mx", "sistemas", "Sistem@s2026$", "Recibo: " + txtrecibo.Text + " " + ex.ToString() + "  " + System.Environment.MachineName + " " + "Line: " + trace.GetFrame(0).GetFileLineNumber());
                     return;
                 }
                 try
@@ -1701,7 +1701,7 @@ namespace Recepcion_PT
                     System.Diagnostics.StackTrace trace = new System.Diagnostics.StackTrace(ex, true);
                     //Console.WriteLine("Line: " + trace.GetFrame(0).GetFileLineNumber());
                     MessageBox.Show("Recibo: " + txtrecibo.Text + " " + ex.ToString() + "  " + System.Environment.MachineName + " " + "Line: " + trace.GetFrame(0).GetFileLineNumber(), "AVISO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Utilerias.Class1.SendMail("sistemas@mrlucky.com.mx", "sistemas", "sisgab", "Recibo: " + txtrecibo.Text + " " + ex.ToString() + "  " + System.Environment.MachineName + " " + "Line: " + trace.GetFrame(0).GetFileLineNumber());
+                    Utilerias.Class1.SendMail("sistemas@mrlucky.com.mx", "sistemas", "Sistem@s2026$", "Recibo: " + txtrecibo.Text + " " + ex.ToString() + "  " + System.Environment.MachineName + " " + "Line: " + trace.GetFrame(0).GetFileLineNumber());
                     return;
                 }
             }
@@ -3465,14 +3465,14 @@ namespace Recepcion_PT
                     thisConnection.Close();
                     //Utilerias.Class1.registrar_movimiento(DateTime.Now, Utilerias.Class1.Nombre_equipo, Utilerias.Class1.Usuario, "errorSQL", Utilerias.Class1.Formulario, txtrecibo.Text, ex.ToString());
                     Utilerias.Class1.registro_errores(DateTime.Now, Utilerias.Class1.Usu_login, Environment.MachineName, "2.3", ex.ToString().Trim(), "MPFOX");
-                    Utilerias.Class1.SendMail("sistemas@mrlucky.com.mx", "sistemas", "sisgab", ex.ToString().Trim());
+                    Utilerias.Class1.SendMail("sistemas@mrlucky.com.mx", "sistemas", "Sistem@s2026$", ex.ToString().Trim());
                     MessageBox.Show(ex.ToString(), "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
                 catch (Exception ex1)
                 {
                     thisConnection.Close();
-                    Utilerias.Class1.SendMail("sistemas@mrlucky.com.mx", "sistemas", "sisgab", ex1.ToString().Trim());
+                    Utilerias.Class1.SendMail("sistemas@mrlucky.com.mx", "sistemas", "Sistem@s2026$", ex1.ToString().Trim());
                     MessageBox.Show(ex1.ToString(), "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
