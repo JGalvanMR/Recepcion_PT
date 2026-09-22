@@ -42,12 +42,12 @@
             this.BtnSave = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.BtnGene = new System.Windows.Forms.Button();
+            this.LblFeEla = new System.Windows.Forms.Label();
             this.NOMBRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TARIMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CAJAS = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FECHACAD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ASIGNAR = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.LblFeEla = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DgDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -167,6 +167,19 @@
             this.BtnGene.UseVisualStyleBackColor = true;
             this.BtnGene.Click += new System.EventHandler(this.BtnGene_Click);
             // 
+            // LblFeEla
+            // 
+            this.LblFeEla.AutoSize = true;
+            this.LblFeEla.BackColor = System.Drawing.Color.Transparent;
+            this.LblFeEla.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblFeEla.ForeColor = System.Drawing.Color.White;
+            this.LblFeEla.Location = new System.Drawing.Point(263, 87);
+            this.LblFeEla.Name = "LblFeEla";
+            this.LblFeEla.Size = new System.Drawing.Size(20, 18);
+            this.LblFeEla.TabIndex = 8;
+            this.LblFeEla.Text = "...";
+            this.LblFeEla.Visible = false;
+            // 
             // NOMBRE
             // 
             this.NOMBRE.HeaderText = "NOMBRE";
@@ -192,26 +205,12 @@
             // 
             this.FECHACAD.HeaderText = "FECHA CAD";
             this.FECHACAD.Name = "FECHACAD";
-            this.FECHACAD.ReadOnly = true;
             this.FECHACAD.Width = 90;
             // 
             // ASIGNAR
             // 
             this.ASIGNAR.HeaderText = "ASIGNAR";
             this.ASIGNAR.Name = "ASIGNAR";
-            // 
-            // LblFeEla
-            // 
-            this.LblFeEla.AutoSize = true;
-            this.LblFeEla.BackColor = System.Drawing.Color.Transparent;
-            this.LblFeEla.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblFeEla.ForeColor = System.Drawing.Color.White;
-            this.LblFeEla.Location = new System.Drawing.Point(263, 87);
-            this.LblFeEla.Name = "LblFeEla";
-            this.LblFeEla.Size = new System.Drawing.Size(20, 18);
-            this.LblFeEla.TabIndex = 8;
-            this.LblFeEla.Text = "...";
-            this.LblFeEla.Visible = false;
             // 
             // FrmFecCad
             // 
@@ -253,11 +252,11 @@
         private System.Windows.Forms.Button BtnSave;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Button BtnGene;
+        private System.Windows.Forms.Label LblFeEla;
         private System.Windows.Forms.DataGridViewTextBoxColumn NOMBRE;
         private System.Windows.Forms.DataGridViewTextBoxColumn TARIMA;
         private System.Windows.Forms.DataGridViewTextBoxColumn CAJAS;
         private System.Windows.Forms.DataGridViewTextBoxColumn FECHACAD;
         private System.Windows.Forms.DataGridViewCheckBoxColumn ASIGNAR;
-        private System.Windows.Forms.Label LblFeEla;
     }
 }

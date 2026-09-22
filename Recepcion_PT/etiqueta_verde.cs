@@ -936,96 +936,97 @@ namespace Recepcion_PT
                                             //impr += "~SD12\n"; //~SD15
                                             impr += "^PW832\n";
                                             impr = impr + "^FO270,25^BQN,2,3^FDLA,http://www.mrlucky.com.mx/tr/trazabilidad2_dmi.php?id_codigo=" + aux4 + "^FS\n"; //CODIGO 2D BQ DE CUADRO - PTI"
-                                            impr = impr + "^FO680,25^BQN,2,3^FDLA,http://www.mrlucky.com.mx/tr/trazabilidad2_dmi.php?id_codigo=" + aux4_1 + "^FS\n";  // CODIGO 2D BQ DE CUADRO - PTI"
+                                            impr = impr + "^FO700,25^BQN,2,3^FDLA,http://www.mrlucky.com.mx/tr/trazabilidad2_dmi.php?id_codigo=" + aux4_1 + "^FS\n";  // CODIGO 2D BQ DE CUADRO - PTI"
                                                                                                                                                                       //impr = impr + "^FO-15,20^A1N,22,18,^FD" + txtrecibo.Text + "-" + clave_gab + " - " + nutar1 + "/" + totar1 + "^FS\n";//etiqueta 1
                                                                                                                                                                       //impr = impr + "^FO430,20^A1N,22,18,^FD" + txtrecibo.Text + "-" + clave_gab + " - " + nutar2 + "/" + totar2 + "^FS\n";//etiqueta 2
-                                            impr = impr + "^FO-15,15^A2N,22,8,^FD" + txtrecibo.Text + "-" + clave_gab + " - " + nutar1 + "/" + totar1 + "^FS\n";//etiqueta 1
-                                            impr = impr + "^FO430,15^A2N,22,8,^FD" + txtrecibo.Text + "-" + clave_gab + " - " + nutar2 + "/" + totar2 + "^FS\n";//etiqueta 2
+                                                                                                                                                                      //impr = impr + "^FO-15,15^A2N,22,8,^FD" + txtrecibo.Text + "-" + clave_gab + " - " + nutar1 + "/" + totar1 + "^FS\n";//etiqueta 1
+                                            impr = impr + "^FO15,15^A2N,22,8,^FD" + txtrecibo.Text + "-" + clave_gab + " - " + nutar1 + "/" + totar1 + "^FS\n";//etiqueta 1
+                                            impr = impr + "^FO450,15^A2N,22,8,^FD" + txtrecibo.Text + "-" + clave_gab + " - " + nutar2 + "/" + totar2 + "^FS\n";//etiqueta 2
                                                                                                                                                                 //nombre en ingles etiqueta 1
                                             if (aux2.Length > 25)
                                             {
-                                                impr = impr + "^FO-15,55^A0N,22,18^FD" + aux2.Substring(0, 25) + "^FS\n"; // DESCRIPCION DEL PRODUCTO LINEA 1
-                                                impr = impr + "^FO-15,80^A0N,22,18^FD" + aux2.Substring(25) + "^FS\n"; // DESCRIPCION DEL PRODUCTO LINEA 1
+                                                impr = impr + "^FO15,55^A0N,22,18^FD" + aux2.Substring(0, 25) + "^FS\n"; // DESCRIPCION DEL PRODUCTO LINEA 1
+                                                impr = impr + "^FO15,80^A0N,22,18^FD" + aux2.Substring(25) + "^FS\n"; // DESCRIPCION DEL PRODUCTO LINEA 1
                                             }
                                             else
-                                                impr = impr + "^FO-15,55^A0N,22,18^FD" + aux2 + "^FS\n"; // DESCRIPCION DEL PRODUCTO LINEA 1
+                                                impr = impr + "^FO15,55^A0N,22,18^FD" + aux2 + "^FS\n"; // DESCRIPCION DEL PRODUCTO LINEA 1
 
                                             //nombre en español etiqueta 1
                                             if (aux5.Length > 25)
                                             {
-                                                impr = impr + "^FO-15,120^A0N,22,18^FD" + aux5.Substring(0, 25) + "^FS\n"; // DESCRIPCION DEL PRODUCTO LINEA 1
-                                                impr = impr + "^FO-15,143^A0N,22,18^FD" + aux5.Substring(25) + "^FS\n"; // DESCRIPCION DEL PRODUCTO LINEA 1
+                                                impr = impr + "^FO15,120^A0N,22,18^FD" + aux5.Substring(0, 25) + "^FS\n"; // DESCRIPCION DEL PRODUCTO LINEA 1
+                                                impr = impr + "^FO15,143^A0N,22,18^FD" + aux5.Substring(25) + "^FS\n"; // DESCRIPCION DEL PRODUCTO LINEA 1
                                             }
                                             else
-                                                impr = impr + "^FO-15,120^A0N,22,18^FD" + aux5 + "^FS\n"; // DESCRIPCION DEL PRODUCTO LINEA 1
+                                                impr = impr + "^FO15,120^A0N,22,18^FD" + aux5 + "^FS\n"; // DESCRIPCION DEL PRODUCTO LINEA 1
 
 
                                             //nombre en ingles etiqueta 2
                                             if (aux2.Length > 25)
                                             {
-                                                impr = impr + "^FO430,55^A0N,22,18^FD" + aux2.Substring(0, 25) + "^FS\n"; // DESCRIPCION DEL PRODUCTO LINEA 2
-                                                impr = impr + "^FO430,80^A0N,22,18^FD" + aux2.Substring(25) + "^FS\n"; // DESCRIPCION DEL PRODUCTO LINEA 2
+                                                impr = impr + "^FO450,55^A0N,22,18^FD" + aux2.Substring(0, 25) + "^FS\n"; // DESCRIPCION DEL PRODUCTO LINEA 2
+                                                impr = impr + "^FO450,80^A0N,22,18^FD" + aux2.Substring(25) + "^FS\n"; // DESCRIPCION DEL PRODUCTO LINEA 2
                                             }
                                             else
-                                                impr = impr + "^FO430,55^A0N,22,18^FD" + aux2 + "^FS\n"; // DESCRIPCION DEL PRODUCTO LINEA 2
+                                                impr = impr + "^FO450,55^A0N,22,18^FD" + aux2 + "^FS\n"; // DESCRIPCION DEL PRODUCTO LINEA 2
 
                                             //nombre en español etiqueta 2
                                             if (aux5.Length > 25)
                                             {
-                                                impr = impr + "^FO430,120^A0N,22,18^FD" + aux5.Substring(0, 25) + "^FS\n"; // DESCRIPCION DEL PRODUCTO LINEA 2
-                                                impr = impr + "^FO430,143^A0N,22,18^FD" + aux5.Substring(25) + "^FS\n"; // DESCRIPCION DEL PRODUCTO LINEA 2
+                                                impr = impr + "^FO450,120^A0N,22,18^FD" + aux5.Substring(0, 25) + "^FS\n"; // DESCRIPCION DEL PRODUCTO LINEA 2
+                                                impr = impr + "^FO450,143^A0N,22,18^FD" + aux5.Substring(25) + "^FS\n"; // DESCRIPCION DEL PRODUCTO LINEA 2
                                             }
                                             else
-                                                impr = impr + "^FO430,120^A0N,22,18^FD" + aux5 + "^FS\n"; // DESCRIPCION DEL PRODUCTO LINEA 2
+                                                impr = impr + "^FO450,120^A0N,22,18^FD" + aux5 + "^FS\n"; // DESCRIPCION DEL PRODUCTO LINEA 2
 
 
                                             impr = impr + "^FO320,170^A0B,25,25,^FD" + lote + "^FS\n";//LOTE ETIQUETA 1
-                                            impr = impr + "^FO740,170^A0B,25,25,^FD" + lote + "^FS\n";//LOTE ETIQUETA 2
+                                            impr = impr + "^FO760,170^A0B,25,25,^FD" + lote + "^FS\n";//LOTE ETIQUETA 2
 
                                             if (txtrchtbl.Text.Trim() == "PILAR-2" && clave_gab == "05005LEORN" || clave_gab == "05005LSANA")
                                             {
                                                 impr = impr + "^FO210,150^A0N,22,18^FD" + "18MR4001 ^FS\n";
-                                                impr = impr + "^FO630,150^A0N,22,18^FD" + "18MR4001 ^FS\n";
+                                                impr = impr + "^FO650,150^A0N,22,18^FD" + "18MR4001 ^FS\n";
                                             }
                                             if (txtrchtbl.Text.Trim() == "PILAR-4" && clave_gab == "05005LEORN" || clave_gab == "05005LSANA")
                                             {
                                                 impr = impr + "^FO210,150^A0N,22,18^FD" + "18MR4002 ^FS\n";
-                                                impr = impr + "^FO630,150^A0N,22,18^FD" + "18MR4002 ^FS\n";
+                                                impr = impr + "^FO650,150^A0N,22,18^FD" + "18MR4002 ^FS\n";
 
                                             }
 
                                             impr = impr + "^FO320,140^A0N,22,18^FD" + "C: " + auxnum1 + "^FS\n"; // CAJA ETIQUETA 1
-                                            impr = impr + "^FO740,140^A0N,22,18^FD" + "C: " + auxnum2 + "^FS\n"; // CAJA ETIQUETA 2
+                                            impr = impr + "^FO760,140^A0N,22,18^FD" + "C: " + auxnum2 + "^FS\n"; // CAJA ETIQUETA 2
 
                                             if ((clave_gab.Trim() == "18007JI56V") || (clave_gab.Trim() == "18JIBOML66") || (clave_gab.Trim() == "16001TO561") ||
                                                (clave_gab.Trim() == "18007JI55M") || (clave_gab == "18007JVM55") || (clave_gab == "18007JVM66") ||
                                                (clave_gab.Trim() == "18007JI56M") || (clave_gab == "18007JVM56") || (clave_gab == "18JIML6610"))
                                             {
-                                                impr = impr + "^FO-15,185^A0B,30,25,^FD" + grado + num + "^FS\n"; // SE IMPRIME TIPO GRADO 1
-                                                impr = impr + "^FO430,185^A0B,30,25,^FD" + grado + num + "^FS\n"; // SE IMPRIME TIPO GRADO 2
+                                                impr = impr + "^FO5,185^A0B,30,25,^FD" + grado + num + "^FS\n"; // SE IMPRIME TIPO GRADO 1
+                                                impr = impr + "^FO450,185^A0B,30,25,^FD" + grado + num + "^FS\n"; // SE IMPRIME TIPO GRADO 2
                                             }
 
                                             if ((clave_gab.Trim() == "05006MLNA2"))
                                             {
-                                                impr = impr + "^FO-15,170^A0B,13,15,^FDPACK DATE:^FS\n"; // fecha etiqueta 1    
-                                                impr = impr + "^FO-30,180^A0B,17,18,^FD" + Convert.ToDateTime(fec).ToString("MM/dd/yy") + "^FS\n"; // fecha etiqueta 1     
-                                                impr = impr + "^FO430,170^A0B,13,15,^FDPACK DATE:^FS\n"; // fecha etiqueta 2 
-                                                impr = impr + "^FO445,180^A0B,17,18,^FD" + Convert.ToDateTime(fec).ToString("MM/dd/yy") + "^FS\n"; // fecha etiqueta 2
+                                                impr = impr + "^FO15,170^A0B,13,15,^FDPACK DATE:^FS\n"; // fecha etiqueta 1    
+                                                impr = impr + "^FO30,180^A0B,17,18,^FD" + Convert.ToDateTime(fec).ToString("MM/dd/yy") + "^FS\n"; // fecha etiqueta 1     
+                                                impr = impr + "^FO450,170^A0B,13,15,^FDPACK DATE:^FS\n"; // fecha etiqueta 2 
+                                                impr = impr + "^FO465,180^A0B,17,18,^FD" + Convert.ToDateTime(fec).ToString("MM/dd/yy") + "^FS\n"; // fecha etiqueta 2
                                                                                                                                                    //impr = impr + "^FO-15,175^A0B,17,18,^FD" + Convert.ToDateTime(fec).ToString("MM/dd/yy") + "^FS\n"; // fecha etiqueta 1                                                
                                                                                                                                                    //impr = impr + "^FO430,175^A0B,17,18,^FD" + Convert.ToDateTime(fec).ToString("MM/dd/yy") + "^FS\n"; // fecha etiqueta 2                                                 
                                             }
 
                                             impr = impr + "^FO70,170,^BY1,^BCN,60,N,N,N^FD" + "01" + aux3 + "^FS\n"; // CODIGO GTIN COD DE BARRAS 128 1
-                                            impr = impr + "^FO495,170,^BY1,^BCN,60,N,N,N^FD" + "01" + aux3 + "^FS\n"; // CODIGO GTIN COD DE BARRAS 128 2
+                                            impr = impr + "^FO515,170,^BY1,^BCN,60,N,N,N^FD" + "01" + aux3 + "^FS\n"; // CODIGO GTIN COD DE BARRAS 128 2
                                             impr = impr + "^FO110,240^A0N,17,15,^FD" + aux3_texto + "^FS\n"; // DESCRIPCION DEL PRODUCTO EN EL CODIGO BQ LINEA 1 
                                             if (etilote.Length > 0)
                                             {
                                                 impr = impr + "^FO290,145^A0B,17,18,^FD" + etilote + "^FS\n"; // SE IMPRIME LA FECHA DE CADUCIDAD LINEA 1
-                                                impr = impr + "^FO710,145^A0B,17,18,^FD" + etilote + "^FS\n";
+                                                impr = impr + "^FO730,145^A0B,17,18,^FD" + etilote + "^FS\n";
                                             }
                                             impr = impr + "^FO350,165^A0B,17,18,^FD" + mfeccad + "^FS\n"; // SE IMPRIME LA FECHA DE CADUCIDAD LINEA 1
-                                            impr = impr + "^FO770,165^A0B,17,18,^FD" + mfeccad + "^FS\n"; // SE IMPRIME LA FECHA DE CADUCIDAD LINEA 2    
-                                            impr = impr + "^FO510,240^A0N,17,17,^FD" + aux3_texto + "^FS\n"; // DESCRIPCION DEL PRODUCTO EN EL CODIGO BQ LINEA 2
+                                            impr = impr + "^FO790,165^A0B,17,18,^FD" + mfeccad + "^FS\n"; // SE IMPRIME LA FECHA DE CADUCIDAD LINEA 2    
+                                            impr = impr + "^FO530,240^A0N,17,17,^FD" + aux3_texto + "^FS\n"; // DESCRIPCION DEL PRODUCTO EN EL CODIGO BQ LINEA 2
                                             impr = impr + "^XZ\n";
 
                                             #region
@@ -1382,7 +1383,7 @@ namespace Recepcion_PT
                             reader1.Dispose();
 
                             #endregion
-
+                            ActualizarProdTipoSiEsDiferente(auxtr_2, auxtr_8, thisConnection.ConnectionString);
                             #region Fox
                             /*try
                             {
@@ -2769,6 +2770,45 @@ namespace Recepcion_PT
                 // Manejo de errores
                 //Console.WriteLine($"Error al obtener el peso unitario: {ex.Message}");
                 return "0.0";
+            }
+        }
+
+        public void ActualizarProdTipoSiEsDiferente(string auxtr_2, string auxtr_8, string connectionString)
+        {
+            // Consulta SQL que actualiza solo si es diferente o si es nulo actualmente
+            string query = @"UPDATE tb_cat_producto 
+                     SET prod_tipo = @prodTipo 
+                     WHERE prod_clave = @prodClave 
+                     AND (prod_tipo <> @prodTipo OR prod_tipo IS NULL)";
+
+            using (SqlConnection conexion = new SqlConnection(connectionString))
+            {
+                using (SqlCommand comando = new SqlCommand(query, conexion))
+                {
+                    // Pasamos los parámetros de forma segura para evitar inyecciones SQL
+                    comando.Parameters.AddWithValue("@prodTipo", string.IsNullOrEmpty(auxtr_8) ? (object)DBNull.Value : auxtr_8);
+                    comando.Parameters.AddWithValue("@prodClave", string.IsNullOrEmpty(auxtr_2) ? (object)DBNull.Value : auxtr_2);
+
+                    try
+                    {
+                        conexion.Open();
+                        int filasAfectadas = comando.ExecuteNonQuery();
+
+                        // Opcional: Puedes verificar si se realizó un cambio
+                        if (filasAfectadas > 0)
+                        {
+                            // MessageBox.Show("El tipo de producto fue actualizado.");
+                        }
+                        else
+                        {
+                            // MessageBox.Show("El tipo de producto era idéntico; se omitió la actualización.");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error al intentar actualizar el producto: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
             }
         }
     }
